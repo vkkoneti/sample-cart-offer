@@ -14,3 +14,8 @@ The server will start at port 9001
 
 # How to run the tests
 ./mvnw test  
+### Test Coverage
+- Offer creation validation for different customer segments
+- Offer application logic based on user segment
+- Negative scenarios for segment mismatch and insufficient cart value
+- Mocked user segment service to isolate cart logic
