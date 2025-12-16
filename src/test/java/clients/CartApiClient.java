@@ -12,4 +12,15 @@ public class CartApiClient {
                 .when()
                 .post(TestConfig.APPLY_OFFER_ENDPOINT);
     }
+
+    public Response applyOfferRaw(String rawJson) {
+        return RestAssured
+                .given()
+                .baseUri(TestConfig.BASE_API_URL)
+                .contentType("application/json")
+                .body(rawJson)
+                .when()
+                .post(TestConfig.APPLY_OFFER_ENDPOINT);
+    }
+
 }
